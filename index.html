@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Hacker!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Login Terminal -->
+  <div class="login-container" id="loginContainer">
+    <div class="terminal-login">
+      <p>ACCESS DENIED. PLEASE ENTER AUTHENTICATION CREDENTIALS:</p>
+      <label for="passwordInput">PASSWORD/BIRTHDATE:</label>
+      <input type="password" id="passwordInput" placeholder="Enter here...">
+      <button id="authenticateButton">AUTHENTICATE</button>
+      <p id="errorMessage" class="error-message"></p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content hidden" id="mainContent">
+    <!-- Matrix Background -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Animated Text Overlay -->
+    <div class="animated-message-overlay" id="animatedMessageOverlay">
+      <span id="animatedText" class="hidden"></span>
+    </div>
+
+    <!-- Content with photos -->
+    <div class="content-overlay hidden" id="contentOverlay">
+      <pre id="output"></pre>
+
+      <div class="photo-container" id="photoContainer">
+        <!-- Foto-foto akan ditambahkan di sini oleh JavaScript -->
+      </div>
+
+      <button id="revealGiftButton" class="reveal-button hidden">🎁 KLIK DISINI</button>
+    </div>
+  </div>
+
+  <!-- Lagu Ulang Tahun -->
+  <audio id="birthdaySong" src="musik.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
