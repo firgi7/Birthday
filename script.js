@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const photoContainer = document.querySelector('.photo-container');
 
     // --- Configuration ---
-    const CORRECT_PASSWORD = "18082007"; // *** REMEMBER TO CHANGE THIS! ***
+    const CORRECT_PASSWORD = "18082008"; // *** REMEMBER TO CHANGE THIS! ***
 
     const sfxTyping = new Audio('sfx/typing.mp3');
     const sfxAccessGranted = new Audio('sfx/access_granted.mp3');
@@ -232,3 +232,4 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'flower_page.html';
     });
 });
+
